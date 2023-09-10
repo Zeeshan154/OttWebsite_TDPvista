@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="card">
+    <title>Profile</title>
+    <style>
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+      }
+
+      .title {
+        color: grey;
+        font-size: 18px;
+      }
+
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+      }
+
+      button:hover,
+      a:hover {
+        opacity: 0.7;
+      }
+
+
+
+      body {
+        font-family: tahoma;
+        height: 100vh;
+        background-image: url();
+        background-size: cover;
+        background-position: center;
+        display: flex
+        align-items: center;
+      }
+
+      .our-team {
+        padding: 30px 0 40px;
+        margin-bottom: 30px;
+        background-color: #f7f5ec;
+        text-align: center;
+        overflow: hidden;
+        position:fixed;
+      }
+
+      .our-team .picture {
+        display: inline-block;
+        height: 130px;
+        width: 130px;
+        margin-bottom: 50px;
+        z-index: 1;
+        position: relative;
+      }
+
+      .our-team .picture::before {
+        content: "";
+        width: 100%;
+        height: 0;
+        border-radius: 50%;
+        background-color: #0e0e0e;
+        position: absolute;
+        bottom: 135%;
+        right: 0;
+        left: 0;
+        opacity: 0.9;
+        transform: scale(3);
+        transition: all 0.3s linear 0s;
+      }
+
+      .our-team:hover .picture::before {
+        height: 100%;
+      }
+
+      .our-team .picture::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #c5c808;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .our-team .picture img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all 0.9s ease 0s;
+      }
+
+      .our-team:hover .picture img {
+        box-shadow: 0 0 0 14px #f7f5ec;
+        transform: scale(0.7);
+      }
+
+      .our-team .title {
+        display: block;
+        font-size: 15px;
+        color: #4e5052;
+        text-transform: capitalize;
+      }
+
+      .our-team .social {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #ff4f04;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+      }
+
+      .our-team:hover .social {
+        bottom: 0;
+      }
+
+      .our-team .social li {
+        display: inline-block;
+      }
+
+      .our-team .social li a {
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+        color: white;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+      }
+
+      .our-team .social li a:hover {
+        color: #000000;
+        background-color: #f7f5ec;
+      }
+    </style>
+</head>
+
+<body>
+  <div id="wrong">
+    <a href="index.html">&#10006;</a>
+  </div>
+  <!-- Add icon library -->
+    <img src="media/profile.jpg" alt="John" style="width:100%">
+    <h1>MOHD ZEESHAN</h1>
+    <p class="title">TDPVista</p>
+    <p>PSIT College </p>
+    <a href="#"><i class="fa fa-dribbble"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <p><button>Contact</button></p>
+  </div>
+      <script src="profile.css"></script>
+</body>
+
+</html>
